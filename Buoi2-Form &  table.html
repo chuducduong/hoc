@@ -7,12 +7,26 @@
         <form>
              Họ Tên: <br/>
              <input type="text" size="2"> <br/>
-
-             ĐT: <br/>
-             <input type="number"> <br/>
+             Họ Tên: <br/>
+             <input type="text" value="chuducduong"> <br/>
+             <!--thuộc tính value chỉ mặc định chưa điền gì đã là thế kia, 
+            khi điền thông tin vào thì nó sẽ mất-->
+               
+             <!--Khi muốn ấn vào chữ họ tên mà con trỏ chuột phi thẳng xuống ô điền luôn thì sử dụng thẻ label
+            và thêm trường for và id phải giống y hệt nhau  -->
+            <label for="hoten">Họ tên label</label> 
+            <input id="hoten" type="text"> <br>
+             
+            <label for="lol">SĐT:</label><br/>
+             <input id="lol" type="number"> <br/>
+             
              email: <br/>
-             <input type="text"> <br/>
+             <input type="text" ; placeholder="nhập mail của mày"> <br/>
+             <!--thuộc tính placeholder để hiển thị dòng chữ gợi ý ẩn, khi gõ chữ vào thì nó sẽ mất-->
+             Năm sinh <br/>
              <input type="date">  <br/>
+
+             
              
              giới tình
              <input type="radio" name="gender"> Nữ 
@@ -48,28 +62,39 @@
         </form>
         <br>
         ----------------------------------------------------------------------------------------
-        <!--BẢNG-->>
-        <table border="20">
-            <tr>
-                <th>ho ten</th>
-                <th>email</th>
-                <th>phone</th>
-                <th>sex</th>
-               
-            </tr>
-            <tr> <!--dòng-->
-                <td> họ tên</td>
-                <td> email</td>
-                <td> phone</td>
+        <h1>BẢNG</h1>
+        <!--BẢNG-->
+        <!--
+            table: khai báo 1 bảng
+            <tr> khai báo 1 dòng
+            <th> khai báo 1 ô tiêu đề
+            <td> khai báo 1 ô dữ liệu         
+        -->
+        <table border="1"> <!--thuộc tính border để thêm đường viền cho bảng-->
+            <tr> <!--table row - khai báo 1 hàng -->
+                <td>Họ Tên</td> <!--Table data - cung cấp dữ liệu cho 1 ô -->
+                <td>Email</td>
+                <td>SĐT</td>
+                <th colspan="2">Giới tính</th> <!--table header - tiêu đề thì nó chỉ đậm hơn
+                thuộc tính colspan để mở rộng, bao gồm 2 ô bên dưới   -->
                 
-           
+            </tr> 
+            <!--để cung cấp dữ liệu cho 3 cột này thì ra khỏi thẻ tr trên và tạo 1 tr khác -->
+            <tr>
+                <td><input type="text"></td> <!--kết hợp thẻ input vào trong 1 ô -->
+                <td>ducduongk13d@gmail.com</td>
+                <td>08989898989</td>
+                <td>nam</td>
+                <td></td>
             </tr>
             <tr>
-                <td>nguyen van A</td>
-                <td>nguyena@gmail.com</td>
-                <td>03939393933</td>
-            </tr>
-        </table>
+               <td>chuducduong</td>
+               <td>ducduongk13d@gmail.com</td>
+               <td>08989898989</td>
+               <td></td>
+               <td>nữ</td>
+           </tr>
+      </table>
     </body>
 
 </html>

@@ -1,10 +1,32 @@
 <html>
     <head>
-
+<!--BẢNG-->
+        <!--
+            table: khai báo 1 bảng
+            <tr> khai báo 1 dòng
+            <th> khai báo 1 ô tiêu đề
+            <td> khai báo 1 ô dữ liệu         
+        -->
     </head>
     <body>
-        gioi tinh <br>
-        <input type="radio" name="lol">nữ
-        <input type="radio" name="lol">nam
+   <table border="1"> <!--thuộc tính border để thêm đường viền cho bảng-->
+         <tr> <!--table row - khai báo 1 hàng -->
+             <td>Họ Tên</td> <!--Table data - cung cấp dữ liệu cho 1 ô -->
+             <td>Email</td>
+             <td>SĐT</td>
+             <th>Giới tính</th> <!--tiêu đề thì nó chỉ đậm hơn -->
+         </tr> 
+         <!--để cung cấp dữ liệu cho 3 cột này thì ra khỏi thẻ tr trên và tạo 1 tr khác -->
+         <tr>
+             <td>chuducduong</td>
+             <td>ducduongk13d@gmail.com</td>
+             <td>08989898989</td>
+         </tr>
+         <tr>
+            <td>chuducduong</td>
+            <td>ducduongk13d@gmail.com</td>
+            <td>08989898989</td>
+        </tr>
+   </table>
     </body>
 </html>
