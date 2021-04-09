@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta charset="UTF-8"> <!--để hiện thị tiếng việt trong trang web-->
+        <title> Buoi 2 - Tao FORM </title>
+    </head>
+    <body>
+        <form>
+             Họ Tên: <br/>
+             <input type="text" size="2"> <br/>
+
+             ĐT: <br/>
+             <input type="number"> <br/>
+             email: <br/>
+             <input type="text"> <br/>
+             <input type="date">  <br/>
+             
+             giới tình
+             <input type="radio" name="gender"> Nữ 
+             <input type="radio" name="gender"> Nam
+             <!--name="gender" để tự xóa đi nam khi chọn nữ., chỉ chọn 1 giá trị duy nhất giá trị name 
+            là cái gì cũng được miễn là giống nhau-->
+             <br/>
+             Tỉnh thành: <br/>
+             <select >
+                 <option>HN</option>
+                 <option>HCM</option>
+                 <option>SG</option>
+             </select>
+             <br/>
+             Quận huyện: <br/>
+             <select >
+                 <option>hoàng mai</option>
+                 <option>ba đình</option>
+                 <option>thanh xuân</option>
+             </select>
+             <br/>
+             Ghi chú<br/>
+             <textarea></textarea> <!-- thẻ textarea để nhập nhiều dòng vào ô--> <br>
+             công nghệ muốn học: <br> 
+             <input type="checkbox"> java <br>
+             <input type="checkbox"> php <br>
+             <input type="checkbox"> sql <br>
+             
+             sinh nhật <br>
+             <input type="date" value="" >  <!-- thẻ nhập ngày tháng-->
+             
+
+        </form>
+        <br>
+        ----------------------------------------------------------------------------------------
+        <!--BẢNG-->>
+        <table border="20">
+            <tr>
+                <th>ho ten</th>
+                <th>email</th>
+                <th>phone</th>
+                <th>sex</th>
+               
+            </tr>
+            <tr> <!--dòng-->
+                <td> họ tên</td>
+                <td> email</td>
+                <td> phone</td>
+                
+           
+            </tr>
+            <tr>
+                <td>nguyen van A</td>
+                <td>nguyena@gmail.com</td>
+                <td>03939393933</td>
+            </tr>
+        </table>
+    </body>
+
+</html>
+
