@@ -1,0 +1,51 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <!--
+        <p id="demo">day la doan van</p>
+        <script>
+        document.getElementById("demo").innerHTML = "day la doan van moi";
+        //tham chiếu đến id = demo đến thẻ p thi moi khi chạy trang web thì 
+        //nó sẽ thay đổi thành đây là đoạn văn mới. 
+        </script>
+        -->
+       
+         <!--
+         <p id="doan_van">day la doan van</p>
+        <button onclick="thay_doi_noi_dung()">bam vao day để thay đổi nội dung</button> 
+         
+        <script>
+            /*
+            giờ muốn bấm vào nút để nó gọi được cái hàm function ở dưới để thay đổi nội dung
+        thì gán button 1 sự kiện onclick thay_doi_noi_dung()
+            */
+            function thay_doi_noi_dung(){
+                document.getElementById("doan_van").innerHTML = "day la doan van moi vcl";
+            } 
+            // hàm function này sẽ được gọi bởi nút onclick ở trên 
+        </script>
+
+         -->
+        
+
+         <input id="ho_ten" type="text"/>
+         
+         <p id="doan_van">day la doan van</p>
+         <button onclick="thay_doi_noi_dung()">bam vao day để thay đổi nội dung</button> 
+          
+         <script>
+    /*sau khi bấm vào nút thì dòng chữ ở bên dưới sẽ là xin chào + tên*/
+             function thay_doi_noi_dung(){
+                 let name = document.getElementById("ho_ten").value;
+                 //khai báo biến name tham chiếu đến biến input ( lấy giá trị người dùng nhập vào thẻ input)
+                 document.getElementById("doan_van").innerHTML = "xin chao " + name ;
+                 // thay đổi nội dung thẻ p có id là doan_van
+             } 
+            
+         </script>
+
+         
+    </body>
+</html>
