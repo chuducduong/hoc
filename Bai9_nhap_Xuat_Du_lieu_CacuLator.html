@@ -10,10 +10,11 @@
         <br>
         <button onclick="cong()">Addition + </button> <!-- thêm thuộc tính onclick thì mới gọi hàm được -->
         <button onclick="tru()">tru - </button>
+        <button onclick="Nhan()">Nhan * </button>
         <p id="ket_qua"> Result Division: 1</p>
         <script>
             function cong() {//bắt đầu 1 khối lệnh 
-            let number_1 = + document.getElementById("toan_hang_1").value;
+            let number_1 = +document.getElementById("toan_hang_1").value;
             let number_2 = +document.getElementById("toan_hang_2").value;
             //thêm dấu + đằng trước để thể hiện nó là số học 
             //khai báo biến number tham chếu id từ input trên 
@@ -28,6 +29,14 @@
             let number_2 = +document.getElementById("toan_hang_2").value;
             
             let Result = number_1 - number_2; 
+            document.getElementById("ket_qua").innerHTML = "Result Division:" + Result; 
+            }
+
+            function Nhan () {
+            let number_1 = + document.getElementById("toan_hang_1").value;
+            let number_2 = +document.getElementById("toan_hang_2").value;
+            
+            let Result = number_1 * number_2; 
             document.getElementById("ket_qua").innerHTML = "Result Division:" + Result; 
             }
         </script>
