@@ -1,0 +1,56 @@
+<html>
+    <head>
+         <meta charset="UTF-8">
+         <title>   </title>
+    </head>
+    <body>
+        <!--  dự đoán 1 số là chẵn hay lẻ 
+         <script>
+            let number = prompt("Nhap n = ");
+            if (number % 2 == 0 ) {
+                document.write(number + " la so chan");
+            }
+            else {
+                document.write(number + "la so le");
+            }
+         </script>
+
+        -->
+        phuong trinh ax+b=0 
+        <input type="number" id="a"> X + <input id="b" type="number"> = 0
+       <button onclick="solve()">Xem kết quả</button>
+       <h2 id="result"></h2>
+<script>
+    function solve() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let message = '';
+        if (a === 0) {
+            if (b === 0) {
+               message = 'Phương trình có vô số nghiệm';
+            } else {
+                message = 'Phương trình vô nghiệm';
+            }
+        } else {
+            message = 'Phương trình có nghiệm là: ' + -b / a;
+        }
+
+        document.getElementById("result").innerHTML = message;
+
+    }
+
+    // ax^2 + bx + c = 0;
+    /*
+    a == 0 -> in ra day k phai phuong trinh bac2;
+    a !== 0 -> tinh denta = b*b - 4*A*c
+            + denta == 0 -> nghiem kep x1=x2=-b/(2*a)
+            + denta < 0 -> vo nghiem
+            + denta > 0 -> 2 nghiem pb x1 = -b + can(denta) / (2*a);
+                                        x2 = -b - can(denta) / (2*a);
+     */
+
+
+</script>
+
+    </body>
+</html>
