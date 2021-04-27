@@ -1,0 +1,42 @@
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <title>TinhCHiSOCanNang</title>
+    </head>
+    <body>
+       <input type="number" id = "weight"/>CanNang
+       <input type="number" id = "hight"/>ChieuCao
+       <button onclick="duong()">KetQua</button>
+      <p id="result"> chi so BMI</p>
+      <!--Tính chỉ số cân nặng của cơ thể -->
+        
+       <script>
+            function duong() {
+                let w = +document.getElementById("weight").value;
+                let h = +document.getElementById("hight").value;
+                let bmi = w / (h^2); 
+                
+                
+                if (bmi < 16){
+                    document.getElementById("result").innerHTML=("Gay do III "  + bmi);
+                    // thay thế chữ dòng chữ ở thẻ P thành kết quả này 
+                }
+                 
+                 else if (bmi < 17) {
+                    document.getElementById("result").innerHTML=("Gay do II "  + bmi);
+                 }
+                 
+               else if (bmi < 18.5){
+                document.getElementById("result").innerHTML=("Gay do I va"  + bmi);
+               }
+               
+               else if (bmi < 25){
+                document.getElementById("result").innerHTML="BT"  + bmi;
+               }
+                
+            }
+
+       </script>
+
+    </body>
+</html>
