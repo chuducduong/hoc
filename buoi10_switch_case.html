@@ -1,0 +1,43 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+           /*
+           let day = 7; 
+            switch (day) {
+                case 3: // so sánh case số 3 này với biến day 
+                document.write("hom nay di hoc"); //nếu = 3 thì in ra màn hình
+                break; // break để dừng lại khi đúng với case tương ứng , nếu ko có break thì nó sẽ in ra hết kết quả
+                case 4: //so sánh case số 4 này với biến day 
+                document.write("hom nay ko hoc");
+                break;
+                case 2: //so sánh case số 4 này với biến day 
+                document.write("hom nay ko hoc");
+                break;
+                default://khi tất cả case ko đúng thì nó sẽ chạy default 
+                    document.write("deo biet co hoc hay ko");
+                    */
+                    let day = +prompt("nhap ngay");
+                    document.write(day + "<br>");  // + thêm thẻ br để xuống dòng  
+                    
+            switch (day) {
+                    case 2:
+                    case 4:
+                    case 6:
+                         document.write("hom nay ko hoc");
+                    break;
+                    case 3:
+                    case 5:
+                    case 7:
+                         document.write("hom nay hoc");
+                    break;
+                    default:
+                         document.write("deo biet co hoc hay ko");
+                    
+
+            }
+        </script>
+    </body>
+</html>
